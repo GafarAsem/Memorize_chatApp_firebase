@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".ProfileFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/fragmentProfile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/profile_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:menu="@menu/menu_typeprofile">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/profile_userName"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center|top"
+                android:text="1j.ft"
+                android:textColor="@color/darkGray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="20dp"
+                app:cardCornerRadius="25dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile_sample" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/profile_Name"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="20dp"
+                android:text="Gafar Asem"
+                android:textColor="@color/darkGray"
+                android:textSize="20sp"
+
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/profile_following"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_margin="20dp"
+                android:onClick="onClickFollowing"
+                android:text="Following 3"
+                android:textColor="@color/darkGray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/profile_followers"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_margin="20dp"
+                android:onClick="onClickFollowers"
+                android:text="Followers 380"
+                android:textColor="@color/darkGray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/profile_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_progressbar"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/blueGray" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/profile_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="100dp"
+        android:visibility="gone" />
+
+</FrameLayout>

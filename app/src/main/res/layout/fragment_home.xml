@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:orientation="vertical"
+    
+    >
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/Home_appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/Home_Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/corner_square"
+            android:backgroundTint="@color/blueGray"
+            app:menu="@menu/menu_toolbar"
+
+            >
+
+            <EditText
+                android:id="@+id/Home_searchText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Search"
+                android:inputType="textPersonName"
+                android:textColor="@color/darkGray"
+                android:textColorHint="@color/white" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+<!--    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+<!--        android:id="@+id/Home_swipRefresh"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="15dp" />-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/profile_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="100dp"/>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit_infoActivity"
+    android:orientation="vertical"
+    android:theme="@style/Theme.addpost"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:menu="@menu/edite_info"
+        />
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="40dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/Edit_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.5"
+                android:foreground="@drawable/cam"
+                android:foregroundTint="@color/darkGray"
+                android:foregroundGravity="center"
+                android:onClick="onClickEditImage"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/default_user" />
+        </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/Edit_userNametext"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/blueGray"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/darkGray"
+        android:textColorHint="@color/blueGray"
+        android:textCursorDrawable="@null" />
+
+    <EditText
+        android:id="@+id/Edit_Nametext"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/blueGray"
+        android:ems="10"
+        android:hint="Your Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/darkGray"
+        android:textColorHint="@color/blueGray"
+        android:textCursorDrawable="@null" />
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="setting"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_round_settings"
+        android:iconTint="@color/darkGray" />
+
+    <item android:title="search"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:iconTint="@color/darkGray"
+        android:onClick="onClickSearchUser"/>
+
+    <item android:title="User"
+        app:showAsAction="always"
+        android:icon="@drawable/profile"
+        android:iconTint="@color/darkGray"
+        android:onClick="onClickProfile"
+        />
+
+</menu>

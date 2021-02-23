@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Memorize</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="log_in_with_phone_number">Log in with phone number</string>
+    <string name="phone_number">phone Number</string>
+
+</resources>

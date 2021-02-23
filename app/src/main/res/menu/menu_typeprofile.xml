@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/grid"
+        android:title="grid"
+        app:showAsAction="always"
+        android:onClick="onClickGridType"/>
+    <item
+        android:icon="@drawable/list"
+        android:title="list"
+        app:showAsAction="always"
+        android:onClick="onClickListType"/>
+    <item
+        android:icon="@drawable/ic_baseline_edit_24"
+        android:title="edit"
+        app:showAsAction="always"
+        android:onClick="onClickEditInfo"
+        />
+</menu>

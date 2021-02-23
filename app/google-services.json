@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "353555620217",
+    "project_id": "memorize-social-app",
+    "storage_bucket": "memorize-social-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353555620217:android:8dd10107ce4d1118004fa8",
+        "android_client_info": {
+          "package_name": "com.socialMedia.Memorize"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353555620217-8lge35mgfes0c1c96g2prskjr5qkgcvt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.socialMedia.Memorize",
+            "certificate_hash": "23b3baa69525ed69a86bf7697c30bfe40c5b4f3c"
+          }
+        },
+        {
+          "client_id": "353555620217-8e2rv7kmro9g34ae7m841e279ec4vt7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDy6fTbIMEQR4UzAKYdN4GkwtVneX8QMag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353555620217-8e2rv7kmro9g34ae7m841e279ec4vt7n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

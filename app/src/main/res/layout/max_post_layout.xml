@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="265dp"
+    android:layout_height="550dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bigPost_card"
+        android:layout_width="250dp"
+        android:layout_height="500dp"
+        android:backgroundTint="@color/blueGray"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="false">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/bigPost_image"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/add"
+                android:scaleType="fitXY"
+                android:src="@drawable/download" />
+
+
+            <TextView
+
+                android:id="@+id/bigPost_Title"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeTextType="uniform"
+                android:text="Title"
+                android:textColor="@color/primSecondColor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bigPost_note"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:autoSizeMaxTextSize="17dp"
+                android:autoSizeTextType="uniform"
+                android:text="Note"
+                android:textColor="@color/primSecondColor"
+
+
+                />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:gravity="bottom|right">
+
+                <TextView
+                    android:id="@+id/bigPost_date"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="16/7/2020"
+                    android:textColor="@color/primSecondColor"
+                    android:textSize="12dp"
+
+
+                    />
+
+
+                <ImageButton
+                    android:id="@+id/bigPost_star"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/blueGray"
+                    android:onClick="onClickStarPost"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/star"
+                    />
+
+                <ImageButton
+                    android:id="@+id/bigPost_heart"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="10dp"
+                    android:background="@color/blueGray"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/heart"
+                    android:onClick="onClickHeartPost"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
